@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width , nitial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                gap: 2%;
+                margin-bottom: 10px;
+            }
+            body {
+                background: #f5f5f5;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Segoe UI', sans-serif;
+                padding: 10px;
+            }
+
+            .view-button {
+                background: white;
+                width: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 3px solid gray;
+                cursor:pointer;
+                justify-content:space-between;
+            }
+            .view-button:hover{
+            background:#dcdcdc;
+            }
+
+            .active-user {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                min-height:200px;
+                gap: 20px;
+                background: #7ee6a0;
+                border-radius: 10px;
+                border: 2px solid green;
+                padding: 15px;
+            }
+            .active-user p{ 
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .chart {
+                display: flex;
+                flex-direction: column;
+                width: 68%;
+                min-height:200px;
+                gap: 20px;
+                background: #cfefff;
+                border-radius: 10px;
+                border: 2px solid blue;
+                padding: 15px;
+            }
+            .chart p{
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .feature1 {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                min-height:200px;
+                gap: 20px;
+                background: #ffb6b6;
+                border-radius: 10px;
+                border: 2px solid red;
+                padding: 15px;
+            }
+            .feature1 p {font-size: 20px; font-weight: bold;}
+
+            .feature2 {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                min-height:200px;
+                gap: 20px;
+                background: #ffe67d;
+                border-radius: 10px;
+                border: 2px solid goldenrod;
+                padding: 15px;
+            }
+            .feature2 p {font-size: 20px; font-weight: bold;}
+
+            .feature3 {
+                display: flex;
+                flex-direction: column;
+                width: 32%;
+                min-height:200px;
+                gap: 20px;
+                background: #d9a7ff;
+                border-radius: 10px;
+                border: 2px solid purple;
+                padding: 15px;
+            }
+            .feature3 p {font-size: 20px; font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <div class="active-user">
+            <p>active users   1240</p> 
+        </div>
+
+        <div class="chart">
+            <p>Main Analytics Chart (Flexible Width)</p>
+        </div>
+
+        <div class="feature1">
+            <p>Feature A</p>
+            <button class="view-button">view</button>
+        </div>
+
+        <div class="feature2">
+            <p>Feature B (longer text title here)</p>
+            <button class="view-button">view</button>
+        </div>
+
+        <div class="feature3">
+            <p>Feature C</p>
+            <button class="view-button">view</button>
+        </div>
+    </body>
+</html>
